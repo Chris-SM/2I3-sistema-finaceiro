@@ -1,0 +1,84 @@
+form{
+    margin-top: 100px;
+    text-align: left;
+}
+
+#hippo{
+    font-size: 100px;
+    color: mediumpurple;
+}
+body{
+    background-color: #B0E0E6;
+}
+
+.Texto{
+    font-family: "Nerko One", cursive;
+
+}
+
+#Bb:hover{
+    background-color: azure;
+    border: 1px plum solid;
+    color: black;
+}
+
+.form-Checkbox{
+    margin-left: 1%;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+#Tipo{
+    padding-bottom: 50px;
+}
+
+
+#checkbox {
+    appearance: none;
+    position: relative;
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: transparent;
+    border: 0.125rem solid #13e0cf;
+    border-radius: 0.25rem;
+    transform: translateY(30%);
+  }
+  
+  #checkbox::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: center;
+    transition: 0.125s transform ease-in-out;
+    box-shadow: inset 1rem 1rem #fff;
+  }
+  
+  
+  #checkbox:checked {
+    background-color: #13e0cf;
+    border-color: #13e0cf;
+  }
+  
+  
+  #checkbox:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  
+  #checkbox:disabled {
+    opacity: 0.25;
+  }
+  
+  #checkbox:focus {
+    border-color: #13e0cf;
+  }
+  
+  #checkbox:focus + label {
+    color: #13e0cf;
+  }

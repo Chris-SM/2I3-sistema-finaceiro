@@ -1,0 +1,23 @@
+form{
+    margin-top: 100px;
+    text-align: left;
+}
+
+#Contro{
+    font-size: 100px;
+    color: darkolivegreen;
+}
+body{
+    background-color: #B0E0E6;
+}
+
+.Texto{
+    font-family: "Nerko One", cursive;
+
+}
+
+#Bb:hover{
+    background-color: azure;
+    border: 1px plum solid;
+    color: black;
+}
