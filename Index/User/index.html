@@ -19,7 +19,7 @@
           <div class="col-xl-4 col-sm-12">
             <br>
             <i class="fa-solid fa-gamepad" style="margin-top: 10px;" id="Contro"></i>
-            <form action="../../php/insertU.php">
+            <form action="../../php/insertU.php" method="post">
               <div class="mb-3">
                 <label for="nome" class="Texto">NOME:</label>
                 <input type="text" class="form-control" name="nome" id="nome">
@@ -37,7 +37,7 @@
                   <input type="password" class="form-control" name="senha" id="senha">
                 </div>
                 <div>
-                  <button class="btn btn-primary" style="float: left;" id="Bb"><label class="Texto">Entrar</label></button>
+                  <a href="../index.html"><button type="button" class="btn btn-primary" style="float: left;" id="Bb"><label class="Texto">Entrar</label></button></a>
                   <button type="submit" class="btn btn-primary" style="float: right;"><label class="Texto">Cadastrar</label></button>
                 </div>
               </form>
