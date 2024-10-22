@@ -20,22 +20,22 @@
             <br>
             <i class="fa-solid fa-hippo" id="hippo" style="margin-top: 10px;"></i>
             <form>
-              <div class="mb-3">
-                <label for="NOME_ID" class="Texto">ID:</label>
-                <input type="text" class="form-control" id="NOME_ID">
-              </div>
                 <div class="mb-3">
                   <label for="NOME_CA" class="Texto">NOME:</label>
                   <input type="text" class="form-control" id="NOME_CA">
                 </div>
                 <div class="mb-3" id="Check">
                   <label for="checkbox" class="Texto" id="chek">TIPO:</label>
-                  <input type="checkbox" class="form-Checkbox" id="checkbox">
+                  <input type="checkbox" class="form-Checkbox" name="checkbox" id="checkbox">
                 </div>
                 <div class="mb-3">
                   <label for="Desc" class="Texto">DESCRIÇÃO:</label>
-                  <input type="text" class="form-control" id="Desc">
+                  <input type="text" class="form-control" name="Desc" id="Desc">
                 </div>
+              <div class="mb-3">
+                <label for="NOME_ID" class="Texto">ID Categoria:</label>
+                <input type="text" class="form-control" name="NOME_ID" id="NOME_ID">
+              </div>
                 <div>
                   <button type="submit" class="btn btn-primary" style="float: left;" id="Bb"><label class="Texto">Cancelar</label></button>
                   <button type="submit" class="btn btn-primary" style="float: right;"><label class="Texto">Cadastrar</label></button>
