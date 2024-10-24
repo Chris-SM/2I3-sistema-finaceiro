@@ -1,13 +1,21 @@
 <?php 
 include "conexao.php";
 
-$Data = $_POST['NOME_DT'];
-$Desc = $_POST['NOME_DS'];
-$CdUs = $_POST['ID_USU'];
-$CdCat = $_POST['ID_CAT'];
+$Nome = $_POST['NOME_CA'];
+$Desc = $_POST['Desc'];
+if($_POST['checkbox'] == "on")
+{
+    $Tipo = 1;
+}
+else
+{
+    $Tipo = 0;
+}
+
+
 
 $conec->query("insert into tb_categoria values
-(null,'$Data','$Desc','$CdUs','$CdCat')");
+(null,'$Nome',$Tipo,'$Desc')");
 
-
+header("location: ../Index/Menu.html");
 ?>

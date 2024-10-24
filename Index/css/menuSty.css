@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com);
+@import url(https://fonts.gstatic.com);
+@import url(https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap);
+
+body{
+    margin: 0;
+    background-color: rgb(41, 41, 41);
+    color: rgb(201, 253, 255);
+    font-family: 'Oxanium';
+}
+
+#caixa{
+    border-bottom: white 1px solid;
+    border-top: white 1px solid;
+    position: absolute;
+    top: 20vh;
+    width: 98vw;
+    padding: 1vw;
+    text-align: center;
+    background: url(../../img/jojo.png);
+}
+
+#Foto,img{
+    width: 28vw;
+}
+
+button {
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    border-radius: 1vh;
+    background-color: rgba(128, 128, 128, 0.3);
+    color: white;
+    letter-spacing: 4px;
+  }
+  
+#L {
+    border: 2px solid #04AA6D;
+  }
+  
+#L:hover {
+    background-color: #04AA6D;
+  }  
+  #C {
+      border: 2px solid #0483aa;
+    }
+    
+  #C:hover {
+      background-color: #0483aa;
+    }

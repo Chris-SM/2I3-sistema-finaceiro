@@ -1,25 +1,26 @@
+<?php
 
-<?php 
+include 'conexao.php';
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-include 'conexao.php';
 
-$pedido = $conec->query("select * from tb_user where email='$email'");
+$pedido = $conec->query("select email,senha from tb_user where email='$email'");
+echo "a";
 
-$resultado = $pedido->fetch_assoc();
-
-
-$email_banco = $resultado['email'];
-$senha_banco = $resultado['senha'];
-
-if($email == $email_banco && $senha == $senha_banco)
-{
+if ($pedido == null) {
     header("localtion: index.html");
-}
-else
-{
+} else {
+    $resultado = $pedido->fetch_assoc();
 
-}
+    $email_banco = $resultado['email'];
 
+    $senha_banco = $resultado['senha'];
+
+    if ($email == $email_banco && $senha == $senha_banco) {
+        header("location: ../Index/Menu.html");
+    } else {
+        header("Location: ../Index/index.html");
+    }
+}
 ?>
