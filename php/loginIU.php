@@ -9,7 +9,7 @@ $pedido = $conec->query("select * from tb_user where email='$email'");
 
 
 if ($pedido == null) {
-    header("localtion: index.html");
+    header("location: index.html");
 } else {
     $resultado = $pedido->fetch_assoc();
 

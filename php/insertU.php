@@ -7,7 +7,8 @@ $cargo = $_POST['cargo'];
 $senha = $_POST['senha'];
 
 $conec->query("insert into tb_user values
-(null,'$nome','$email','$cargo','$senha')")
+(null,'$nome','$email','$cargo','$senha')");
 
+header("location: ../Index/index.html");
 
 ?>

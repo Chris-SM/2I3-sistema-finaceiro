@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="css/menuSty.css">
 </head>
-<body>
+<body style="background-color: rgb(41, 41, 41);">
+    <?php 
+    include("Navbar.php")?>
     <div id="caixa">
         <div id="Foto" style="float: left;">
             <img src="../img/Nautilus.jpg">
@@ -37,8 +38,10 @@
             </p>
             <a href="Lancamento/index.html"><button id="L">Lançamento</button></a>
             <a href="Categoria/index.html"><button id="C">Categoria</button></a>
-            <a href="Logout.php"><button id="S">Sair</button></a>
+            <a href="ListarUser.php"><button id="L">Ver A lista</button></a>
+            <!-- <a href="../php/logout.php"><button id="S">Sair</button></a> -->
         </div>
     </div>
 </body>
+    <link rel="stylesheet" href="css/menuSty.css">
 </html>
