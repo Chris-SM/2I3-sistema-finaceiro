@@ -63,12 +63,13 @@
 <script>
     function exit(){
         let linkatual = window.location.href;
-        if (linkatual.includes("2I3-sistema-finaceiro/Index/Menu.php")){
-            window.location.href = linkatual.slice(linkatual.indexOf("/Index/Menu.php"),linkatual.length)+"/php/logout.php";
+
+        if (linkatual.includes("Menu.php")){
+            window.location.href = linkatual.slice(0,linkatual.indexOf("/Index"))+"/php/logout.php";
         }
         else
         {
-            window.location.href = linkatual.slice(linkatual.indexOf("/Index/Menu.php"),linkatual.length)+"/Index/Menu.php";
+            window.location.href = linkatual.slice(0,linkatual.indexOf("/Index"))+"/Index/Menu.php";
         }
     }
 </script>

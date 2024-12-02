@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
 </head>
+<script>
+    let linkatual = window.location.href;
+    alert(linkatual);
+    <?php 
+        $link = $_SERVER['SCRIPT_URI'];
+        echo "alert('$link');"
+        // if (linkatual.includes("Menu.php")){
+        //     header("location: ../Index");
+        // }
+        // else
+        // {
+        //     header("location: ../Index/Menu.php");
+        // }
+    ?>
+    </script>
 <body style="background-color: rgb(41, 41, 41);">
     <?php 
     include("Navbar.php")?>
