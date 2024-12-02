@@ -65,11 +65,15 @@
         let linkatual = window.location.href;
 
         if (linkatual.includes("Menu.php")){
-            window.location.href = linkatual.slice(0,linkatual.indexOf("/Index"))+"/php/logout.php";
+            var mudar = linkatual.slice(0,linkatual.indexOf("/Index"))+"/php/logout.php";
+            alert(mudar);
+            window.open(mudar, '_self');
         }
         else
         {
-            window.location.href = linkatual.slice(0,linkatual.indexOf("/Index"))+"/Index/Menu.php";
+            var mudar = linkatual.slice(0,linkatual.indexOf("/Index"))+"/Index/Menu.php";
+            alert(mudar);
+            window.open(mudar, '_self');
         }
     }
 </script>
